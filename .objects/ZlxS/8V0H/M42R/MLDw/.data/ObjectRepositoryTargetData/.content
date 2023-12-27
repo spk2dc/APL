@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="u7OEubZscECDrNtjzoNvpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" DesignTimeRectangle="886, 441, 785, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT title'" FullSelectorArgument="&lt;webctrl id='title' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='INPUT' /&gt;" Guid="1bc36515-8582-4770-b9e3-a90c2772eb37" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="593, 441, 274, 34" ElementType="Text" FriendlyName="'Title Required'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Title ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Title ' check:text='Title Required' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2af5c69d3da02efae0607679581acfcb.png" xmlns="">0SD_TgZK-yEe8H9CuMb6Vzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

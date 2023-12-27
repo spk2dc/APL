@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H7iA6JeSaUSKVZ2KJWAvxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" CvTextArea="905, 659, 43, 17" CvTextArgument="Book" CvType="Text" DesignTimeRectangle="886, 648, 785, 43" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'Book'" FullSelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" Guid="5c5f8990-a249-41a9-ac89-0a24075159ba" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="709, 659, 132, 20" CvTextArgument="Format Required" CvType="Text" DesignTimeRectangle="593, 648, 274, 34" ElementType="Text" FriendlyName="'Format Required'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' check:text='Format Required' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5d3628b4f74c73ea49b3a5e7e05a0a05.png" xmlns="">0RSOB0X3awkKurnOR2o_G5g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

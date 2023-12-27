@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="slgO4X3bwUSG65qJjU2RuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" DesignTimeRectangle="895, 973, 236, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit Materials Request'" FullSelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' /&gt;" FuzzySelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' check:text='Submit Materials Request' /&gt;" Guid="575fe07a-301e-4606-ac1b-233f20b461ce" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b6e680d206dcee8ded097dce3944b634.png" xmlns="">0kypguv-42Ei760lCZKDINw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

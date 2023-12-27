@@ -1,0 +1,268 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="APL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="list" Type="InArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848,3400</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>APL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="APL" sap:VirtualizedContainerService.HintSize="718.4,3335.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="author" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="656,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;APL list(0): &quot;+list(0)]" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="656,3040.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="60" Values="[list]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="622.4,2852.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="579.2,2763.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,2546.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="483.2,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="483.2,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[author]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - ")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[title]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="u7OEubZscECDrNtjzoNvpg" DesignTimeRectangle="886, 441, 785, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl id='title' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='INPUT' /&gt;" Guid="1bc36515-8582-4770-b9e3-a90c2772eb37" InformativeScreenshot="2af5c69d3da02efae0607679581acfcb.png" IsResponsive="True" Reference="417hL52WbkG-OpaL94M7Zg/MLDwcxSq5UGT_UGLGh-DFA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="593, 441, 274, 34" ElementType="Text" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Title ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Title ' check:text='Title Required' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[author]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="RKqA4tazi0S6QCw0W-cSoA" DesignTimeRectangle="886, 503, 785, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl id='author' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='author' tag='INPUT' /&gt;" Guid="0bf9cbd9-cc13-48e6-bd3c-fb689033ccae" InformativeScreenshot="f45eb35160b38255c3f09999bf6e27f3.png" IsResponsive="True" Reference="417hL52WbkG-OpaL94M7Zg/kB4WP_LBiUeZIsqOlJqr0w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="593, 503, 274, 34" ElementType="Text" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='Author' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='Author' check:text='Author' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Select Item 'format'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="eAudio" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="H7iA6JeSaUSKVZ2KJWAvxA" CvTextArea="905, 659, 43, 17" CvTextArgument="Book" CvType="Text" DesignTimeRectangle="886, 648, 785, 43" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" Guid="5c5f8990-a249-41a9-ac89-0a24075159ba" InformativeScreenshot="5d3628b4f74c73ea49b3a5e7e05a0a05.png" Reference="417hL52WbkG-OpaL94M7Zg/1oL6SFhHxUq6zQGmsprbzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="709, 659, 132, 20" CvTextArgument="Format Required" CvType="Text" DesignTimeRectangle="593, 648, 274, 34" ElementType="Text" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' check:text='Format Required' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="senthil.kannan.61109@gmail.com" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="SEygTNaU1UC8UM2O5yC0xw" DesignTimeRectangle="886, 912, 785, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="f95d43f0-884e-47c3-b66b-763f237b2e42" InformativeScreenshot="5b2e2271e20b389d4e454d3ff9dc18e0.png" IsResponsive="True" Reference="417hL52WbkG-OpaL94M7Zg/PdFhizuy9EG2obvsYlvE7Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="593, 912, 274, 34" ElementType="Text" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='Email ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='Email ' check:text='Email' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="slgO4X3bwUSG65qJjU2RuA" DesignTimeRectangle="895, 973, 236, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' /&gt;" FuzzySelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' check:text='Submit Materials Request' /&gt;" Guid="575fe07a-301e-4606-ac1b-233f20b461ce" InformativeScreenshot="b6e680d206dcee8ded097dce3944b634.png" Reference="417hL52WbkG-OpaL94M7Zg/6vGiY2K7hkqK2NSvYn3g6A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="see requests site" sap:VirtualizedContainerService.HintSize="483.2,486.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="21eda297-b909-44a1-b290-818d6fe7100e" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,269.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'see requests'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="21eda297-b909-44a1-b290-818d6fe7100e" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/Submit" ContentHash="GXvCVvTV-EiUZWDqDtaiow" DesignTimeRectangle="618, 924, 244, 42" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'see requests'" FullSelectorArgument="&lt;webctrl aria-role='button' innertext='See My Materials Requests' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' innertext='See My Materials Requests' check:text='See My Materials Requests' /&gt;" Guid="8c682ab3-e7b2-4e26-a46c-abbbfefb8c46" InformativeScreenshot="90e70e0ecffdc85d202ee4b38bc52f33.png" Reference="417hL52WbkG-OpaL94M7Zg/R_zeJztAkU2aIjBJR8w00w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Submission Result | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="CmTKSTplqUKdGnnZ2D2o2Q" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAHdElNRQfiCQ4WABUP4T5CAAAA1klEQVRYR+3PUbKDIAyFYZfRBbvKbqZtmNExyQ+SqPDSh4+55nIO6fJ+rVPhcCQcjoTDkXA4yEfQPzblQgNleu096iPBFvdQHW6QYB9ocXkcBtgHeqgONwiwxRF7j/oIsIUZpWv/I8AWXRFewBZcJgc9RFz4DnLQY8SFK0IZOY6BFhcG4ZwcFKpxBQd0f0P3Czko0OJKfuiehblyJKiSAJeLFhxlsyp3ZYFb/BeQBaYusS0QhWUZVP6U6QsgHFbgLzAo14TDIFqkReXVxwOmL3AKh+Osyxd8QY6ySx7guAAAAABJRU5ErkJggg==" InformativeScreenshot="f986d34a90d685f141077c98b396c6f8.jpg" Reference="417hL52WbkG-OpaL94M7Zg/XGKix6k6O0yqRXK2PzBKxA" Selector="&lt;html app='chrome.exe' title='Submission Result | Arlington Public Library' /&gt;" Title="Submission Result | Arlington Public Library" Url="https://libcat.arlingtonva.us/MaterialsRequest/Submit" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="another site" sap:VirtualizedContainerService.HintSize="483.2,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="Never" ScopeGuid="8c7a13d7-898c-463e-814c-c0c113c4ad5f" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'add another'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8c7a13d7-898c-463e-814c-c0c113c4ad5f" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/MyRequests" ContentHash="WtCV11C9PEOBO2iXvD7CMw" DesignTimeRectangle="612, 1124, 248, 37" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'add another'" FullSelectorArgument="&lt;webctrl parentid='createNewMaterialsRequest' href='/MaterialsRequest/NewRequest' innertext='Submit a New Materials Request' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='createNewMaterialsRequest' href='/MaterialsRequest/NewRequest' innertext='Submit a New Materials Request' check:text='Submit a New Materials Request' /&gt;" Guid="a5ba9a90-e013-46f0-82cd-71fd371f49bf" InformativeScreenshot="8d4238fa45a048e3ff7784e0f4ebda9a.png" Reference="417hL52WbkG-OpaL94M7Zg/-JdyRvyRV0KFbuZq8nQQIA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='My Materials Requests | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="V2cMhTZJE0KSE1swkey3wA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAHdElNRQfiCQ4WABUP4T5CAAAA1klEQVRYR+3PUbKDIAyFYZfRBbvKbqZtmNExyQ+SqPDSh4+55nIO6fJ+rVPhcCQcjoTDkXA4yEfQPzblQgNleu096iPBFvdQHW6QYB9ocXkcBtgHeqgONwiwxRF7j/oIsIUZpWv/I8AWXRFewBZcJgc9RFz4DnLQY8SFK0IZOY6BFhcG4ZwcFKpxBQd0f0P3Czko0OJKfuiehblyJKiSAJeLFhxlsyp3ZYFb/BeQBaYusS0QhWUZVP6U6QsgHFbgLzAo14TDIFqkReXVxwOmL3AKh+Osyxd8QY6ySx7guAAAAABJRU5ErkJggg==" InformativeScreenshot="36d4b0685164d75b0763552aef9d856e.jpg" Reference="417hL52WbkG-OpaL94M7Zg/r8iI5wofB0SQBB20ZL6ZZQ" Selector="&lt;html app='chrome.exe' title='My Materials Requests | Arlington Public Library' /&gt;" Title="My Materials Requests | Arlington Public Library" Url="https://libcat.arlingtonva.us/MaterialsRequest/MyRequests" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="lbsar5mcG0yTX0pkTr9nPQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAHdElNRQfiCQ4WABUP4T5CAAAA1klEQVRYR+3PUbKDIAyFYZfRBbvKbqZtmNExyQ+SqPDSh4+55nIO6fJ+rVPhcCQcjoTDkXA4yEfQPzblQgNleu096iPBFvdQHW6QYB9ocXkcBtgHeqgONwiwxRF7j/oIsIUZpWv/I8AWXRFewBZcJgc9RFz4DnLQY8SFK0IZOY6BFhcG4ZwcFKpxBQd0f0P3Czko0OJKfuiehblyJKiSAJeLFhxlsyp3ZYFb/BeQBaYusS0QhWUZVP6U6QsgHFbgLzAo14TDIFqkReXVxwOmL3AKh+Osyxd8QY6ySx7guAAAAABJRU5ErkJggg==" InformativeScreenshot="81dd130665c84080b5c9fc42306e03f8.jpg" Reference="417hL52WbkG-OpaL94M7Zg/M42Ro6qqEUW8db8I39dddA" Selector="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" Title="Materials Request | Arlington Public Library" Url="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

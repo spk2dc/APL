@@ -1,0 +1,15 @@
+﻿{
+  "Name": "see requests site",
+  "Type": "Screen",
+  "Id": "XGKix6k6O0yqRXK2PzBKxA",
+  "Reference": "417hL52WbkG-OpaL94M7Zg/XGKix6k6O0yqRXK2PzBKxA",
+  "ParentRef": "417hL52WbkG-OpaL94M7Zg/8V0HRfwoQEuKtkWa9s4p2A",
+  "Created": "2023-12-23T20:32:55.876421Z",
+  "Updated": "2023-12-23T20:42:13.2988149Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
