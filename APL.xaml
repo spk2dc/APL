@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>848,3400</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>848,3587.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>APL_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -105,7 +105,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="APL" sap:VirtualizedContainerService.HintSize="718.4,3335.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="APL" sap:VirtualizedContainerService.HintSize="718.4,3522.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="author" />
       <Variable x:TypeArguments="x:String" Name="title" />
@@ -116,30 +116,31 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="656,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;APL list(0): &quot;+list(0)]" />
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="656,3040.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="60" Values="[list]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="656,3228" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="5" Values="[list]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="622.4,2852.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="622.4,3040" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="579.2,2763.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="579.2,2950.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,2546.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="545.6,2733.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[currentItem]" />
                     <Assign sap:VirtualizedContainerService.HintSize="483.2,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
@@ -156,6 +157,17 @@
                         <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - ")(0)]</InArgument>
                       </Assign.Value>
                     </Assign>
+                    <uix:NSelectItem DisplayName="Select Item 'format'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="eAudio" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="H7iA6JeSaUSKVZ2KJWAvxA" CvTextArea="905, 659, 43, 17" CvTextArgument="Book" CvType="Text" DesignTimeRectangle="886, 648, 785, 43" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" Guid="5c5f8990-a249-41a9-ac89-0a24075159ba" InformativeScreenshot="5d3628b4f74c73ea49b3a5e7e05a0a05.png" Reference="417hL52WbkG-OpaL94M7Zg/1oL6SFhHxUq6zQGmsprbzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="709, 659, 132, 20" CvTextArgument="Format Required" CvType="Text" DesignTimeRectangle="593, 648, 274, 34" ElementType="Text" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' check:text='Format Required' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[title]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="u7OEubZscECDrNtjzoNvpg" DesignTimeRectangle="886, 441, 785, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl id='title' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='INPUT' /&gt;" Guid="1bc36515-8582-4770-b9e3-a90c2772eb37" InformativeScreenshot="2af5c69d3da02efae0607679581acfcb.png" IsResponsive="True" Reference="417hL52WbkG-OpaL94M7Zg/MLDwcxSq5UGT_UGLGh-DFA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
@@ -178,17 +190,6 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NSelectItem DisplayName="Select Item 'format'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="eAudio" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
-                      <uix:NSelectItem.Target>
-                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="H7iA6JeSaUSKVZ2KJWAvxA" CvTextArea="905, 659, 43, 17" CvTextArgument="Book" CvType="Text" DesignTimeRectangle="886, 648, 785, 43" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='format' tag='SELECT' /&gt;" Guid="5c5f8990-a249-41a9-ac89-0a24075159ba" InformativeScreenshot="5d3628b4f74c73ea49b3a5e7e05a0a05.png" Reference="417hL52WbkG-OpaL94M7Zg/1oL6SFhHxUq6zQGmsprbzg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CvTextArea="709, 659, 132, 20" CvTextArgument="Format Required" CvType="Text" DesignTimeRectangle="593, 648, 274, 34" ElementType="Text" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='Format Required' check:text='Format Required' /&gt;" SearchSteps="FuzzySelector" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NSelectItem.Target>
-                    </uix:NSelectItem>
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="senthil.kannan.61109@gmail.com" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="SEygTNaU1UC8UM2O5yC0xw" DesignTimeRectangle="886, 912, 785, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="f95d43f0-884e-47c3-b66b-763f237b2e42" InformativeScreenshot="5b2e2271e20b389d4e454d3ff9dc18e0.png" IsResponsive="True" Reference="417hL52WbkG-OpaL94M7Zg/PdFhizuy9EG2obvsYlvE7Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
@@ -200,18 +201,22 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="483.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="slgO4X3bwUSG65qJjU2RuA" DesignTimeRectangle="895, 973, 236, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' /&gt;" FuzzySelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' check:text='Submit Materials Request' /&gt;" Guid="575fe07a-301e-4606-ac1b-233f20b461ce" InformativeScreenshot="b6e680d206dcee8ded097dce3944b634.png" Reference="417hL52WbkG-OpaL94M7Zg/6vGiY2K7hkqK2NSvYn3g6A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="https://libcat.arlingtonva.us/MaterialsRequest/NewRequest" ContentHash="slgO4X3bwUSG65qJjU2RuA" DesignTimeRectangle="895, 973, 236, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' /&gt;" FuzzySelectorArgument="&lt;webctrl type='submit' aaname='Submit Materials Request' check:text='Submit Materials Request' /&gt;" Guid="575fe07a-301e-4606-ac1b-233f20b461ce" InformativeScreenshot="b6e680d206dcee8ded097dce3944b634.png" Reference="417hL52WbkG-OpaL94M7Zg/6vGiY2K7hkqK2NSvYn3g6A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Materials Request | Arlington Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="see requests site" sap:VirtualizedContainerService.HintSize="483.2,486.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="21eda297-b909-44a1-b290-818d6fe7100e" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="see requests site" sap:VirtualizedContainerService.HintSize="483.2,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="21eda297-b909-44a1-b290-818d6fe7100e" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,269.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
