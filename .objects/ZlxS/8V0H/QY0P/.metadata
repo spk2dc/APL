@@ -1,11 +1,11 @@
 ﻿{
-  "Name": "suggest another",
+  "Name": "end page",
   "Type": "Screen",
-  "Id": "r8iI5wofB0SQBB20ZL6ZZQ",
-  "Reference": "417hL52WbkG-OpaL94M7Zg/r8iI5wofB0SQBB20ZL6ZZQ",
+  "Id": "QY0Pq2R4r0qZoMzA3lhbSQ",
+  "Reference": "417hL52WbkG-OpaL94M7Zg/QY0Pq2R4r0qZoMzA3lhbSQ",
   "ParentRef": "417hL52WbkG-OpaL94M7Zg/8V0HRfwoQEuKtkWa9s4p2A",
-  "Created": "2023-12-23T20:35:46.8528731Z",
-  "Updated": "2024-01-04T20:53:11.6653233Z",
+  "Created": "2023-12-29T20:30:41.8214039Z",
+  "Updated": "2023-12-29T20:32:52.3062366Z",
   "CreatedBy": [
     "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
   ],
